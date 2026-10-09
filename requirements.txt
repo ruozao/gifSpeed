@@ -1,0 +1,7 @@
+# gifspeed 唯一必需依赖
+Pillow>=10.0
+
+# 可选：只有 verify_gifspeed.py（ffmpeg 独立交叉验证）需要
+# ffmpeg 是外部程序，不能用 pip 安装。Windows 上可用：
+#   winget install Gyan.FFmpeg
+# 或用 GIFSPEED_FFMPEG 环境变量指向已有的 ffmpeg.exe

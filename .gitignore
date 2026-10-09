@@ -1,0 +1,36 @@
+# ==== 验证与转换产物：全部可再生，不进版本库 ====
+.verify/
+out/
+
+# ==== 根目录的测试素材 GIF（单个 8MB+）====
+/*.gif
+# README 想要演示图的话，把图放进 docs/ 并取消下一行注释
+# !/docs/*.gif
+
+# ==== 本地调研资料，不对外发布 ====
+调研报告.md
+
+# ==== Python ====
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# ==== 虚拟环境 ====
+.venv/
+venv/
+env/
+
+# ==== 测试 / 覆盖率 ====
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==== 编辑器 / 系统 ====
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

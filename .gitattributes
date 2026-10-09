@@ -1,0 +1,10 @@
+# 统一行尾。这条不是洁癖：cmd.exe 不接受裸 LF，会把一行从中间截断
+# （开发时 gifspeed.cmd 第一版就是 LF，报 'ifspeed.cmd' is not recognized）。
+# 仓库里存 LF，检出时按下面的规则转换。
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# 二进制，别动
+*.png binary
+*.gif binary
